@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Edu Quiz</string>
+    <string name="question_1">1. Which city is the biggest in the world?</string>
+    <string name="question_2">2. Which Ocean is the biggest in the world?</string>
+    <string name="question_3">3. Select all European countries.</string>
+    <string name="question_4">4. Write down where Melbourne is (Australia or New Zealand).</string>
+    <string name="question_5">5. Where is Eiffel tower?</string>
+    <string name="atlantic">Atlantic</string>
+    <string name="brussels">Brussels</string>
+    <string name="france">France</string>
+    <string name="greece">Greece</string>
+    <string name="indian">Indian</string>
+    <string name="japan">Japan</string>
+    <string name="london">London</string>
+    <string name="los_angeles">Los Angeles</string>
+    <string name="marseilles">Marseilles</string>
+    <string name="pacific">Pacific</string>
+    <string name="paris">Paris</string>
+    <string name="russia">Russia</string>
+    <string name="shanghai">Shanghai</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+
+</resources>

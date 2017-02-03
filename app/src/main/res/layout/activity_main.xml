@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.eduquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/question_1_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:id="@+id/question_1_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/question_1_first_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/london" />
+
+                <RadioButton
+                    android:id="@+id/question_1_second_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/shanghai" />
+
+                <RadioButton
+                    android:id="@+id/question_1_third_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/los_angeles" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_2_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_2" />
+
+            <RadioGroup
+                android:id="@+id/question_2_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/question_2_first_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/indian" />
+
+                <RadioButton
+                    android:id="@+id/question_2_second_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/atlantic" />
+
+                <RadioButton
+                    android:id="@+id/question_2_third_logo_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/pacific" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_3_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/question_3_first_checkbox"
+                    style="@style/question_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/france" />
+
+
+                <CheckBox
+                    android:id="@+id/question_3_second_checkbox"
+                    style="@style/question_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/russia" />
+
+
+                <CheckBox
+                    android:id="@+id/question_3_third_checkbox"
+                    style="@style/question_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/japan" />
+
+                <CheckBox
+                    android:id="@+id/question_3_fourth_checkbox"
+                    style="@style/question_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:text="@string/greece" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_4_container"
+            style="@style/question_container_style"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_4" />
+
+
+            <EditText
+                android:id="@+id/question_4_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/question_5_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_5" />
+
+            <RadioGroup
+                android:id="@+id/question_5_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/question_5_first_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/paris" />
+
+                <RadioButton
+                    android:id="@+id/question_5_second_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/marseilles" />
+
+                <RadioButton
+                    android:id="@+id/question_5_third_radio"
+                    style="@style/question_radio_button_style"
+                    android:text="@string/brussels" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/question_container_style">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="checkQuiz"
+                android:text="@string/submit"
+                android:layout_width="wrap_content" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="clearAnswers"
+                android:text="@string/reset"
+                android:layout_width="wrap_content" />
+                " />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
